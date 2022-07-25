@@ -1,0 +1,46 @@
+header {
+	background: linear-gradient(90deg, #574ae8 0%, #3ea1db 100%);
+	padding: 48px 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+.info-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.info-header b,
+.info-header a {
+	font-family: 'Lexend Deca';
+	font-weight: 400;
+	color: #ffffff;
+	font-size: 18px;
+}
+
+.info-header a {
+	text-decoration: none;
+}
+.input-container {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+.input-container img {
+	position: absolute;
+	left: 10px;
+	pointer-events: none;
+}
+.input-container input {
+	background-color: rgba(255, 255, 255, 0.2);
+	border: none;
+	height: 40px;
+	border-radius: 5px;
+	width: 100%;
+	color: #ffffff;
+	padding-left: 38px;
+	padding-right: 12px;
+}
+.input-container input::placeholder {
+	color: #ffffff;
+}
