@@ -5,6 +5,7 @@ header {
 	flex-direction: column;
 	gap: 40px;
 }
+
 .info-header {
 	display: flex;
 	justify-content: space-between;
@@ -21,16 +22,19 @@ header {
 .info-header a {
 	text-decoration: none;
 }
+
 .input-container {
 	position: relative;
 	display: flex;
 	align-items: center;
 }
+
 .input-container img {
 	position: absolute;
 	left: 10px;
 	pointer-events: none;
 }
+
 .input-container input {
 	background-color: rgba(255, 255, 255, 0.2);
 	border: none;
@@ -40,7 +44,123 @@ header {
 	color: #ffffff;
 	padding-left: 38px;
 	padding-right: 12px;
+	outline: transparent;
 }
+
+.input-container input:focus {
+	box-shadow: 0 0 0 2px #ffffff;
+}
+
 .input-container input::placeholder {
 	color: #ffffff;
+}
+
+.conteudo {
+	padding: 50px 20px;
+}
+
+.conteudo-principal {
+	background-color: #ffffff;
+	padding: 24px;
+	gap: 72px;
+	box-shadow: 0px 0px 10px rgba(19, 19, 31, 0.05);
+	border-radius: 5px;
+}
+
+.conteudo-principal + .conteudo-principal {
+	margin-top: 24px;
+}
+
+.conteudo-principal div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 22px;
+}
+
+.conteudo-principal span {
+	color: #717171;
+	font-family: 'Lexend Deca';
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.conteudo-principal img {
+	height: 20px;
+	width: 20px;
+}
+
+.conteudo-principal h1 {
+	font-family: 'Lexend Deca';
+	font-weight: 400;
+	font-size: 18px;
+	color: #1a202c;
+}
+
+.conteudo-principal h2 {
+	font-family: 'Lexend Deca';
+	font-weight: 400;
+	font-size: 14px;
+	color: #717171;
+	margin-top: 8px;
+}
+
+@media (min-width: 768px) {
+	header {
+		padding: 40px;
+		gap: 72px;
+	}
+
+	.info-header {
+		max-width: 900px;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.info-header b,
+	.info-header a {
+		font-size: 24px;
+	}
+
+	.input-container {
+		max-width: 900px;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.input-container img {
+		left: 16px;
+		width: 20px;
+		height: 20px;
+	}
+
+	.input-container input {
+		background-color: rgba(255, 255, 255, 0.2);
+		border: none;
+		height: 64px;
+		border-radius: 5px;
+		font-size: 18px;
+		width: 100%;
+		color: #ffffff;
+		padding-left: 52px;
+		padding-right: 16px;
+	}
+
+	.conteudo-principal {
+		max-width: 900px;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	.conteudo-principal + .conteudo-principal {
+		margin-top: 50px;
+	}
+
+	.conteudo-principal h1 {
+		font-size: 24px;
+	}
+
+	.conteudo-principal h2 {
+		font-size: 18px;
+	}
 }
